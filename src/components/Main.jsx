@@ -18,7 +18,7 @@ export default function Main() {
     const randomNumber = Math.floor(Math.random() * allMemes.length)
     const newMemeUrl = allMemes[randomNumber].url
     setMeme(prevMeme => ({
-      setMeme,
+      ...setMeme,
       imageUrl: newMemeUrl
     }))
   }
